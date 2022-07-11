@@ -1,0 +1,421 @@
+<html>
+	<head>
+	<script>
+function validateemail()  
+{  
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  
+}
+</script>
+<script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+})
+    </script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		
+
+		
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		
+		<!-- JavaScript Bundle with Popper -->
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+		</script>
+	<link href="style.css" rel="stylesheet">	
+	</head>
+	<body>
+		<div class="header">
+			<div class="Menu">
+				<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid"><h3 class="ms-5">
+				<h3 class="navbar-brand ms-5 spn">Digital Consulting</h3></h3>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+
+				</button>
+				<div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active ms-3 spn1" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ms-3 spn1" aria-current="page" href="#">Product</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ms-3 spn1" href="#">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ms-3 spn1" href="#">Contact</a>
+						</li>			
+					</ul>
+					<ul class="navbar-nav ms-5 mb-1 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link spn1" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ms-5 mb-1 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link spn1" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+	  
+				</div>
+				</div>
+				</nav>
+			</div>
+			<div class="main">
+				<h1 class="df ms-5">
+					<p class="ms-5">Drive More</p>
+					<p class="ms-5">Customers</p>
+					<p class="ms-5">Through Digital</p>
+				</h1>
+				<p class="df1 ms-5">
+					<span class="ms-5">We Know how large object will act, but things on a </span>
+					<br/>
+					<span class="ms-5">small scale</span>
+				</p>	
+		
+				<span class="ms-5 df2">
+					<button class="ms-5 btn1" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Appointent</button>
+					<button class="ms-5 btn2" type="button">Learn More</button>
+				</span>
+				
+			</div>
+			<div class="modal fade modal-dialog modal-dialog-centered" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+			<h6 class="modal-title" id="exampleModalLabel">Contact Us</h6> 
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+		<h5 class="ms-3">Make an Appointment</h5>
+        <div class="modal-body">
+            <form name="myform" action="#" method="post" onsubmit="return validateemail();">
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+				<input type="text" id="form2Example1" placeholder="Name" class="form-control me-5" required>
+                <input type="email" name="email"  id="form2Example2" placeholder="example@gmail.com" class="form-control" required />
+
+                </div>
+              
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="datetime-local" id="form2Example2" placeholder="Select Date and Time" class="form-control"  required />
+                </div>
+				<div class="form-outline mb-4">
+                  <textarea id="form2Example3" placeholder="Message" class="form-control" required></textarea>
+                </div>
+              
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                  <button type="submit" class="btn3 ms-3 me-3 btn-primary">Book Appointment</button>
+				  <button type="button" class="btn4 btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              
+              
+              </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+		</div>
+		  
+		<div class="header2">
+			<h2 class="sp">WHY CHOOSE US</h2>
+			<p class="para">Problem try to resolve the conflict between <br/>
+			the two major realms of classical physics: Newtonian mechanics</p>
+			<div class="box1 me-3">
+				<div class="box11">
+					<div class="box121 ms-5"></div>
+					<div class="box122">
+						<div class="box123 ms-5"><i class="fa fa-users m1"></i></div>
+						<div class="box124">
+							<span class="web">Web Development</span>
+						</div>
+					</div>
+					
+				</div>
+				<div class="box12">
+				<br/>
+				<br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">The best products start <br/><span class="ms-5">with figma</span></span></span>	<br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">Design with real data</span></span><br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">Lightning fast prototyping</span></span><br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">Fastest Way to organize</span></span><br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">Work at the speed of thought</span></span>
+					<span class="ms-5 box12_link"><a href="#">Learn More</a></span>
+				</div>
+			</div>
+			<div class="box ms-5 me-3">
+				<div class="box11">
+					<div class="box121 ms-5"></div>
+					<div class="box122">
+						<div class="box123 ms-5"><i class="fa-solid fa-award m1" id="m1"></i></div>
+						<div class="box124">
+							<span class="web">National Top 50 Firms</span>
+						</div>
+					</div>
+				</div>
+				<div class="box12">
+				<br/>
+				<br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">The best products start <br/><span class="ms-5">with figma</span></span></span>	<br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">Design with real data</span></span><br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">Lightning fast prototyping</span></span><br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">Fastest Way to organize</span></span><br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">Work at the speed of thought</span></span>
+					<span class="ms-5 box12_link"><a href="#">Learn More</a></span>
+					
+				</div>
+			</div>
+			<div class="box ms-5">
+				<div class="box11">
+				<div class="box121 ms-5"></div>
+					<div class="box122">
+						<div class="box123 ms-5"><object data="img/carbon_notebook.svg" class="svg" width="30" height="30"> </object></div>
+						<div class="box124">
+							<span class="web">Digital Marketting</span>
+						</div>
+					</div>
+				</div>
+				<div class="box12">
+				<br/>
+				<br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">The best products start <br/><span class="ms-5">with figma</span></span></span>	<br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">Design with real data</span></span><br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">Lightning fast prototyping</span></span><br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">Fastest Way to organize</span></span><br/>
+					<span class="ms-5 box12_sp">- <span class="ms-3">Work at the speed of thought</span></span>
+					<span class="ms-5 box12_link"><a href="#">Learn More</a></span>
+				</div>
+			</div>
+		</div>
+		<div class="header3">
+			<span><h2 class="h2_sp">We are providing best<br/> business service.</h2>
+			<p class="para">Problem try to resolve the conflict between <br/>
+			the two major realms of classical physics: Newtonian mechanics</p></span>
+		</div>
+		<div class="header4">
+	
+			<div class="temp1">
+			<div class="video1"></div>
+			<div class="video">
+				<video src="img/videoplayback.mp4" class="vdo" controls poster="s1.jpg"></video>
+			</div>
+			<div class="video1"></div>
+			</div>
+		</div>
+		
+		<div class="header5">
+			<span><h2 class="h2_sp">What Clients Says</h2>
+			<p class="para">Problem try to resolve the conflict between <br/>
+			the two major realms of classical physics: Newtonian mechanics</p></span>
+		</div>
+ <div class="slide-container swiper">
+ 
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="row">
+                        <div class="card-content">
+                           <div class="rating">
+								<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star-o"></span>
+								</div>
+                            <br>
+                            <p class="description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                        </div>
+
+                        <div class="image"><img style="float:left" src="img/dp1.png"/><span>
+                            <h5 style="float:center;margin-left:20px;"><a style="text-decoration:none; color:#5D21D1;" href="#">Regina Miles</a></h5>
+                            </span></div>
+                        <h6 style="top:205px;margin-right:155px;position:absolute;color: #252B42;">Designer</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="card swiper-slide">
+                        <div class="row">
+                        <div class="card-content">
+                           <div class="rating">
+								<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star-o"></span>
+								</div>
+                            <br>
+                            <p class="description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                        </div>
+
+                        <div class="image"><img style="float:left" src="img/dp1.png"/><span>
+                            <h5 style="float:center;margin-left:20px;"><a style="text-decoration:none; color:#5D21D1;" href="#">Regina Miles</a></h5>
+                            </span></div>
+                        <h6 style="top:205px;margin-right:155px;position:absolute; color:#252B42;">Designer</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="card swiper-slide">
+                        <div class="row">
+                        <div class="card-content">
+                           <div class="rating">
+								<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star-o"></span>
+								</div>
+                            <br>
+                            <p class="description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                        </div>
+
+                        <div class="image"><img style="float:left" src="img/dp2.png"/><span>
+                            <h5 style="float:center;margin-left:20px;"><a style="text-decoration:none; color:#5D21D1;" href="#">Regina Miles</a></h5>
+                            </span></div>
+                        <h6 style="top:205px;margin-right:155px;position:absolute; color: #252B42;">Designer</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="card swiper-slide">
+                        <div class="row">
+                        <div class="card-content">
+                           <div class="rating">
+								<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star-o"></span>
+								</div>
+                            <br>
+                            <p class="description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                        </div>
+
+                        <div class="image"><img style="float:left" src="img/dp1.png"/><span>
+                            <h5 style="float:center;margin-left:20px;"><a style="text-decoration:none; color:#5D21D1;" href="#">Regina Miles</a></h5>
+                            </span></div>
+                        <h6 style="top:205px;margin-right:155px;position:absolute; color: #252B42;">Designer</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="card swiper-slide">
+                        <div class="row">
+                        <div class="card-content">
+                           <div class="rating">
+								<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star-o"></span>
+								</div>
+                            <br>
+                            <p class="description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                        </div>
+
+                        <div class="image"><img style="float:left" src="img/dp1.png"/><span>
+                            <h5 style="float:center;margin-left:20px;"><a style="text-decoration:none; color:#5D21D1;" href="#">Regina Miles</a></h5>
+                            </span></div>
+                        <h6 style="top:205px;margin-right:155px;position:absolute; color: #252B42;">Designer</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="card swiper-slide">
+                        <div class="row">
+                        <div class="card-content">
+                           <div class="rating">
+								<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star-o"></span>
+								</div>
+                            <br>
+                            <p class="description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                        </div>
+
+                        <div class="image"><img style="float:left" src="img/dp1.png"/><span>
+                            <h5 style="float:center;margin-left:20px; color:blue-magenta"><a style="text-decoration:none; color:#5D21D1;" href="#">Regina Miles</a></h5>
+                            </span></div>
+                        <h6 style="top:205px;margin-right:155px;position:absolute; color: #252B42;">Designer</h6>
+                        </div>
+                    </div>
+					</div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn">
+                <div class="arrowCircle">
+                    <div class="arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+            </div>
+            </div>
+       
+                
+            <div class="swiper-button-prev swiper-navBtn" style="color:white">
+                <div class="arrowCircle1">
+                    <div class="arrow1">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+            </div>
+            </div>
+			</div>
+
+
+		<div class="footer">
+			<div class="footer1 ms-5">
+				<span class="ms-5 footer1_spn1">Digital Consulting</span>
+				<span class="footer1_svg"> <a href="#"><object data="img/ant-design_facebook-filled.svg" class="svg" width="30px" height="30px"> </object></a>
+				<a href="#"><object data="img/ant-design_instagram-outlined.svg" class="svg" width="30px" height="30px"> </object></a>
+				<a href="#"><object data="img/ant-design_twitter-outlined.svg" class="svg" width="30px" height="30px"> </object></a>
+				<a href="#"><object data="img/carbon_logo-youtube.svg" class="svg" width="30px" height="30px"> </object></a>
+				<br/></span>
+				<hr>
+			</div>
+			<div class="footer2">
+				<div class="footer2_part1">
+					<span class="ms-5">
+						<span class="l1 ms-5">Company Info</span>
+						<br/><br/>
+						<a href="#" class="ms-5 an"><span class="l2 ms-5">About Us</span></a>
+						<br/><br/>
+						<a href="#" class="ms-5 an"><span class="l2 ms-5">Carrier</span></a>
+						<br/><br/>
+						<a href="#" class="ms-5 an"><span class="l2 ms-5">We are hiring</span></a>
+					
+					</span>
+				</div>
+				<div class="footer2_part1">
+					<span class="ms-5">
+						<span class="l1 ms-5">Legal</span>
+						<br/><br/>
+						<a href="#" class="ms-5 an"><span class="l2 ms-5">About Us</span></a>
+						<br/><br/>
+						<a href="#" class="ms-5 an"><span class="l2 ms-5">Carrier</span></a>
+						<br/><br/>
+						<a href="#" class="ms-5 an"><span class="l2 ms-5">We are hiring</span></a>
+					</span>
+				</div>
+				<div class="footer2_part1">
+					<span class="ms-5">
+						<span class="l1 ms-5">Features</span>
+						<br/><br/>
+						<a href="#" class="ms-5 an"><span class="l2 ms-5">Bussiness Marketting</span></a>
+						<br/><br/>
+						<a href="#" class="ms-5 an"><span class="l2 ms-5">User Analytic</span></a>
+						<br/><br/>
+						<a href="#" class="ms-5 an"><span class="l2 ms-5">Live Chat</span></a>
+					</span>
+				</div>
+				<div class="footer2_part2">
+					<form method="post" action="#">
+						<input type="txt" class="txt" placeholder="Your Email"/>
+						<button type="submit" class="btn_submit">Subscribe</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer3">
+				<div class="footer31 ms-5">
+					<span class="ms-5">All Right Reserved</span>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/bc9ecd2210.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>	
+</html>
